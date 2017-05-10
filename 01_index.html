@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>微信打飞机</title>
+
+  <link rel="stylesheet" type="text/css" href="01_style.css">
+</head>
+<body>
+<!-- 整体盒子 -->
+<div id="contentdiv">
+
+<!-- 开始界面 -->
+  <div id="startdiv">
+    <button onclick="begin()">开始游戏</button>
+  </div>
+
+<!-- 游戏主界面 -->
+  <div id="maindiv">
+    <!-- 分数 -->
+    <div id="scorediv">
+      <label>分数:</label>
+      <label id="label">0</label>
+    </div>
+
+    <!-- 暂停页面 -->
+    <div id="suspenddiv">
+      <button>继续</button>
+      <button>重新开始</button>
+      <button>回到主页面</button>
+    </div>
+
+    <!-- 结束界面 -->
+    <div id="enddiv">
+      <p id="plantext">飞机大战总分数</p>
+      <p id="planscore">0</p>
+      <div><button onclick="again()">重新开始</button></div>
+    </div>
+
+  </div>
+</div>
+
+<script type="text/javascript" src="01_code.js"></script>
+</body>
+</html>
